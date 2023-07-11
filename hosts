@@ -1,0 +1,10 @@
+[masters]
+master ansible_host=ubf
+
+[workers]
+worker0 ansible_host=ubf-31@10.210.12.194 ansible_user=ubf-31 ansible_password=Pass@123 ansible_sudo_pass=Pass@123 userName=ubf-31 ansible_become_pass=Pass@123
+worker1 ansible_host=ubf-31@10.210.12.194 ansible_user=ubf-31 ansible_password=Pass@123 ansible_sudo_pass=Pass@123 userName=ubf-31 ansible_become_pass=Pass@123
+ 
+
+; [server]
+; inventory_hostname  ansible_host=10.210.12.29

@@ -1,0 +1,9 @@
+- hosts: masters
+  become: yes
+  become_user: root
+  gather_facts: 'yes'
+  connection: ssh
+
+  tasks:
+    - name: Copy join command to local file.
+      local_action: copy content="Akakshakjhsaksjhakshjakshj" dest="/tmp/kubernetes_join_command" mode=0777
